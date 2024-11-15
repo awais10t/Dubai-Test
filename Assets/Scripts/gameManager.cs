@@ -1,6 +1,8 @@
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class gameManager : MonoBehaviour
 {
@@ -18,5 +20,15 @@ public class gameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void reGame()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
+
+    public void reMenu()
+    {
+        SceneManager.LoadScene("MenuScene");
     }
 }
