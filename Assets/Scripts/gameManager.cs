@@ -11,14 +11,15 @@ public class gameManager : MonoBehaviour
     public Sprite cardBack;
     public GameObject[] cards;
     public GameObject gameTime;
+	public timeScript timer;
 
-    private bool _init = false;
+	private bool _init = false;
     private int _matches = 8;        //Number of Matched Cards 
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+		ScoreManager.Instance.ResetScore();
+	}
 
 
 	// Update is called once per frame
@@ -91,6 +92,8 @@ public class gameManager : MonoBehaviour
 			x = 2;
 			_matches--;                         //Matched
 			AudioManager.Instance.PlayMatchSound();
+			float matchTime = timer.GetElapsedTime();
+			ScoreManager.Instance.AddMatchScore(matchTime);
 			Debug.Log("Matched");
 			if (_matches == 0)
 				gameTime.GetComponent<timeScript>().endGame();
@@ -98,6 +101,7 @@ public class gameManager : MonoBehaviour
         else
         {
 			AudioManager.Instance.PlayUnmatchSound();
+			ScoreManager.Instance.AddMismatchPenalty();
 			Debug.Log("Not Matched");                    //Not Matched
         }
 

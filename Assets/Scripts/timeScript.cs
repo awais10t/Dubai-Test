@@ -8,13 +8,19 @@ public class timeScript : MonoBehaviour
     public bool timeCounter = true;
     public float seconds, minutes;
     public GameObject GameoverPanel;
+    private float startTime;
 
     // Use this for initialization
     void Start()
     {
         counterText = GetComponent<Text>() as Text;
+        startTime = Time.time;
     }
 
+    public float GetElapsedTime()
+    {
+        return Time.time - startTime;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -40,6 +46,7 @@ public class timeScript : MonoBehaviour
     {
         timeCounter = false;
         counterText.color = Color.yellow;
+    //    Debug.Log($"Final Score: {ScoreManager.Instance.CurrentScore}");
     }
     
 
