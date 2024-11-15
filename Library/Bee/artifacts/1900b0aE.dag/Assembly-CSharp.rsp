@@ -348,6 +348,7 @@
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/cardScript.cs"
 "Assets/Scripts/gameManager.cs"
+"Assets/Scripts/menuScript.cs"
 "Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/ScoreManager.cs"
 "Assets/Scripts/SimpleCardFlip.cs"
