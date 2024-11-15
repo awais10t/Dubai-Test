@@ -13,7 +13,7 @@ public class gameManager : MonoBehaviour
     public GameObject gameTime;
 
     private bool _init = false;
-    private int _matches = 6;        //Number of Matched Cards 
+    private int _matches = 8;        //Number of Matched Cards 
     // Start is called before the first frame update
     void Start()
     {
@@ -37,9 +37,9 @@ public class gameManager : MonoBehaviour
 		List<int> shuffledIndices = Enumerable.Range(0, cards.Length).OrderBy(x => Random.value).ToList();
 		int index = 0;
 
-		for (int id = 0; id < 3; id++) // Rows
+		for (int id = 0; id < 4; id++) // Rows
 		{
-			for (int i = 1; i < 7; i++) // Columns and Number of Matched paired Cards
+			for (int i = 1; i < 9; i++) // Columns and Number of Matched paired Cards
 			{
 				if (index >= cards.Length) break;
 
