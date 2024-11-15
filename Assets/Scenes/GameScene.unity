@@ -388,9 +388,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3154217264968923892}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66753012d1783f843a864761af0044f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 030feecbf4f8842468ec61eaff7f986f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _state: 0
+  _cardValue: 0
+  _initialized: 0
 --- !u!114 &3154217264968923890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,9 +481,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3154217264978578507}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66753012d1783f843a864761af0044f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 030feecbf4f8842468ec61eaff7f986f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _state: 0
+  _cardValue: 0
+  _initialized: 0
 --- !u!222 &3154217264978578502
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -663,9 +669,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3154217265445181709}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66753012d1783f843a864761af0044f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 030feecbf4f8842468ec61eaff7f986f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _state: 0
+  _cardValue: 0
+  _initialized: 0
 --- !u!222 &3154217265445181704
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -950,6 +959,7 @@ GameObject:
   - component: {fileID: 3154217265516998719}
   - component: {fileID: 3154217265516998714}
   - component: {fileID: 3154217265516998717}
+  - component: {fileID: 3154217265516998720}
   m_Layer: 5
   m_Name: gameTime
   m_TagString: Untagged
@@ -977,6 +987,22 @@ RectTransform:
   m_AnchoredPosition: {x: -318, y: 245}
   m_SizeDelta: {x: 184, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3154217265516998720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3154217265516998718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47f275d47668f44fac6824ed416f96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counterText: {fileID: 0}
+  timeCounter: 1
+  seconds: 0
+  minutes: 0
 --- !u!114 &3154217265729087704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,9 +1012,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3154217265729087711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66753012d1783f843a864761af0044f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 030feecbf4f8842468ec61eaff7f986f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _state: 0
+  _cardValue: 0
+  _initialized: 0
 --- !u!222 &3154217265729087706
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1188,9 +1217,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3154217265759591546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66753012d1783f843a864761af0044f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 030feecbf4f8842468ec61eaff7f986f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _state: 0
+  _cardValue: 0
+  _initialized: 0
 --- !u!114 &3154217265759591544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1334,9 +1366,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3154217265807811090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66753012d1783f843a864761af0044f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 030feecbf4f8842468ec61eaff7f986f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _state: 0
+  _cardValue: 0
+  _initialized: 0
 --- !u!114 &3154217265807811088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1694,9 +1729,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3154217266266999474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66753012d1783f843a864761af0044f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 030feecbf4f8842468ec61eaff7f986f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _state: 0
+  _cardValue: 0
+  _initialized: 0
 --- !u!114 &3154217266266999472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1784,9 +1822,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3154217266275711093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66753012d1783f843a864761af0044f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 030feecbf4f8842468ec61eaff7f986f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _state: 0
+  _cardValue: 0
+  _initialized: 0
 --- !u!222 &3154217266275711088
 CanvasRenderer:
   m_ObjectHideFlags: 0
