@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 484067731}
   m_Layer: 0
   m_Name: _GameManager
-  m_TagString: Untagged
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,9 +152,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1d3adbba63e0dc4092272c41b1b9c4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardFace: []
-  cardBack: {fileID: 0}
-  cards: []
+  cardFace:
+  - {fileID: 21300000, guid: fdf9a7396009a46488f292e11e3dd43d, type: 3}
+  - {fileID: 21300000, guid: a48fef0dd947d774ab444998532d0f9e, type: 3}
+  - {fileID: 21300000, guid: cffe843a4ff059941987bdddddee4f0c, type: 3}
+  - {fileID: 21300000, guid: f4372cb54cb8dc04fbabef824c1d8f92, type: 3}
+  cardBack: {fileID: 21300000, guid: d4444774d654ea9418f3fed22c12dbb6, type: 3}
+  cards:
+  - {fileID: 3154217266275711093}
+  - {fileID: 3154217264968923892}
+  - {fileID: 3154217266266999474}
+  - {fileID: 3154217264978578507}
+  - {fileID: 3154217265445181709}
+  - {fileID: 3154217265807811090}
+  - {fileID: 3154217265759591546}
+  - {fileID: 3154217265729087711}
   gameTime: {fileID: 3154217265516998718}
 --- !u!4 &484067732
 Transform:
