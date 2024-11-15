@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 public class gameManager : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class gameManager : MonoBehaviour
     public GameObject gameTime;
 
     private bool _init = false;
-    private int _matches = 4;
+    private int _matches = 6;        //Number of Matched Cards 
     // Start is called before the first frame update
     void Start()
     {
@@ -33,20 +34,18 @@ public class gameManager : MonoBehaviour
 
 	void initializeCards()
 	{
-		for (int id = 0; id < 2; id++)
-		{
-			for (int i = 1; i < 5; i++)
-			{
+		List<int> shuffledIndices = Enumerable.Range(0, cards.Length).OrderBy(x => Random.value).ToList();
+		int index = 0;
 
-				bool test = false;
-				int choice = 0;
-				while (!test)
-				{
-					choice = Random.Range(0, cards.Length);
-					test = !(cards[choice].GetComponent<cardScript>().initialized);
-				}
-				cards[choice].GetComponent<cardScript>().cardValue = i;
-				cards[choice].GetComponent<cardScript>().initialized = true;
+		for (int id = 0; id < 3; id++) // Rows
+		{
+			for (int i = 1; i < 7; i++) // Columns and Number of Matched paired Cards
+			{
+				if (index >= cards.Length) break;
+
+				cards[shuffledIndices[index]].GetComponent<cardScript>().cardValue = i;
+				cards[shuffledIndices[index]].GetComponent<cardScript>().initialized = true;
+				index++;
 			}
 		}
 
