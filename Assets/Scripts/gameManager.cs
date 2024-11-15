@@ -89,10 +89,17 @@ public class gameManager : MonoBehaviour
 		if (cards[c[0]].GetComponent<cardScript>().cardValue == cards[c[1]].GetComponent<cardScript>().cardValue)
 		{
 			x = 2;
-			_matches--;
+			_matches--;                         //Matched
+			AudioManager.Instance.PlayMatchSound();
+			Debug.Log("Matched");
 			if (_matches == 0)
 				gameTime.GetComponent<timeScript>().endGame();
-		}
+        }
+        else
+        {
+			AudioManager.Instance.PlayUnmatchSound();
+			Debug.Log("Not Matched");                    //Not Matched
+        }
 
 
 		for (int i = 0; i < c.Count; i++)
