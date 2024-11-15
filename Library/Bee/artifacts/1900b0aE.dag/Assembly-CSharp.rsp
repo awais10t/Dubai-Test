@@ -350,6 +350,7 @@
 "Assets/Scripts/gameManager.cs"
 "Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/ScoreManager.cs"
+"Assets/Scripts/SimpleCardFlip.cs"
 "Assets/Scripts/timeScript.cs"
 -langversion:9.0
 
