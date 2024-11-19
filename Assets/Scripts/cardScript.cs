@@ -20,7 +20,7 @@ public class cardScript : MonoBehaviour {
 
 	void Start(){
 		_state = 1;
-		_manager = GameObject.FindGameObjectWithTag ("Manager");
+		_manager = GameObject.FindGameObjectWithTag ("Manager");            //This is tag for Game Manager
 	}
 
 	public void setupGraphics() {

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+// Time Class Optimized and Added Combo on the basis of time
 public class timeScript : MonoBehaviour
 {
     public Text counterText;

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// Card flip Animation
 public class SimpleCardFlip : MonoBehaviour
 {
     public float flipSpeed = 500f; // Speed of the flip

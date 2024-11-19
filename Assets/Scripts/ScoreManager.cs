@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 //.....
-public class ScoreManager : MonoBehaviour
+public class ScoreManager : MonoBehaviour     //Added Score Code in this Class
 {
     public static ScoreManager Instance { get; private set; } // Singleton instance
 
